@@ -1,0 +1,99 @@
+version: "3"
+
+services:
+  certbot:
+    image: certbot/certbot
+    restart: unless-stopped
+    volumes:
+      - ./docker/nginx/certbot/conf:/etc/letsencrypt
+      - ./docker/nginx/certbot/www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+  backend:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./docker/backend/Dockerfile
+    volumes:
+      - static_volume:/app/backend/server/django_static
+      - media_volume:/app/backend/server/mediafile
+    depends_on:
+      - db
+      - elasticsearch
+      - cache
+    environment:
+      - POSTGRES_NAME=cakenuage
+      - POSTGRES_USER=cakenuage
+      - POSTGRES_PASSWORD=rb^wmb4zc5v0-19q36c!9y
+    links:
+      - db
+      - elasticsearch
+    expose:
+      - 8000
+  frontend:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./docker/frontend/Dockerfile
+    command: sh -c "yarn build && yarn start"
+    expose:
+      - 3000
+    depends_on:
+      - backend
+    links:
+      - backend
+  nginx:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - static_volume:/app/backend/server/django_static
+      - media_volume:/app/backend/server/mediafile
+      - ./docker/nginx/prod:/etc/nginx/conf.d
+      - ./docker/nginx/certbot/conf:/etc/letsencrypt
+      - ./docker/nginx/certbot/www:/var/www/certbot
+    depends_on:
+      - backend
+      - frontend
+  db:
+    image: postgres:13.0-alpine
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_NAME=cakenuage
+      - POSTGRES_USER=cakenuage
+      - POSTGRES_PASSWORD=rb^wmb4zc5v0-19q36c!9y
+    ports:
+      - 5432
+  elasticsearch:
+    container_name: elasticsearch
+    build:
+      context: .
+      dockerfile: ./docker/elasticsearch/Dockerfile
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.16.2
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+    environment:
+      - discovery.type=single-node
+      - cluster.name=elasticsearch
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+  cache:
+    image: memcached
+    ports:
+      - "11211:11211"
+    entrypoint:
+      - memcached
+      - -m 64
+volumes:
+  static_volume: {}
+  media_volume: {}
+  esdata: {}
+  postgres_data: {}

@@ -1,0 +1,32 @@
+.ImageStyled {
+    max-width: 100%;
+    display: block;
+}
+@media only screen and (max-width: 425px) {
+    .ImageStyled {
+        width: 150px;
+    }
+}
+
+.Container {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    gap: 10px;
+    height: 400px;
+}
+
+@media only screen and (max-width: 425px) {
+    .Container {
+        gap: 5px;
+    }
+}
+
+.TiltWaper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}

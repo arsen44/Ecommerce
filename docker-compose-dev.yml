@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:13.0-alpine
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=170888
+    ports:
+      - 5432
+  cache:
+    image: memcached
+    ports:
+      - "11211:11211"
+    entrypoint:
+      - memcached
+      - -m 64
+volumes:
+  static_volume: {}
+  media_volume: {}
+  esdata: {}
+  postgres_data: {}

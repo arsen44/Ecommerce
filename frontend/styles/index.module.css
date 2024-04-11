@@ -1,0 +1,11 @@
+.MasonryContent {
+  display: block;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 767px) {
+  .MasonryContent::-webkit-scrollbar {
+    width: 3px;
+  }
+}

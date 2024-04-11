@@ -1,0 +1,9 @@
+.children_content {
+  padding-top: 80px;
+}
+
+@media only screen and (max-width: 767px) {
+  .children_content {
+    padding-top: 0px;
+  }
+}

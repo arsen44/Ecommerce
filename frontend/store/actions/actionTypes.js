@@ -1,0 +1,20 @@
+export const AUTH_START = "AUTH_START";
+export const AUTH_SUCCESS = "AUTH_SUCCESS";
+export const AUTH_FAIL = "AUTH_FAIL";
+export const AUTH_LOGOUT = "AUTH_LOGOUT";
+
+export const CART_START = "CART_START";
+export const CART_SUCCESS = "CART_SUCCESS";
+export const CART_FAIL = "CART_FAIL";
+
+export const UPDATE_SEARCH_QUERY = "UPDATE_SEARCH_QUERY";
+export const UPDATE_SEARCH_RESULTS = "UPDATE_SEARCH_RESULTS";
+
+export const ADD_TODO_SUCCESS = "ADD_TODO_SUCCESS";
+export const ADD_TODO_FAILURE = "ADD_TODO_FAILURE";
+export const ADD_TODO_STARTED = "ADD_TODO_STARTED";
+export const DELETE_TODO = "DELETE_TODO";
+
+export const CREATE_START = "CREATE_START";
+export const CREATE_SUCCESS = "CREATE_SUCCESS";
+export const CREATE_FAIL = "CREATE_FAIL";

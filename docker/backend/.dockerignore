@@ -1,0 +1,5 @@
+env
+.vscode
+.git
+ccode example.txt
+__pycache__

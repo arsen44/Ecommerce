@@ -1,0 +1,45 @@
+.Content {
+    display: flex;
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 425px) {
+    .Content {
+        flex-direction: column;
+    }
+}
+
+.ListItem {
+    display: list-item;
+    table-layout: fixed;
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0.21428571em 0;
+    line-height: 1.14285714em;
+    margin-top: 10px;
+}
+
+.ListItem::before {
+    position: absolute;
+    top: auto;
+    left: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    margin-left: -1.25rem;
+    counter-increment: ordered;
+    content: '.';
+    text-align: right;
+    color: #ffffff;
+    vertical-align: middle;
+    opacity: 0.8;
+    padding-left: 1.25rem;
+}
+
+.ItemHeader {
+    display: inline-block;
+    margin: -0.21425em 0 0;
+    margin-left: 15px;
+    font-weight: 500;
+    color: #ffffff;
+}

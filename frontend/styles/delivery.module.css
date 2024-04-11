@@ -1,0 +1,413 @@
+.Content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: rgba(169, 166, 166, 0.25);
+  border: 1px solid rgba(255, 252, 252, 0.5);
+  box-sizing: border-box;
+  backdrop-filter: blur(35px);
+  border-radius: 20px;
+}
+
+.GridCol {
+  display: flex;
+  margin-left: 90px;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .GridCol {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .GridCol {
+    margin-top: 100px;
+  }
+}
+
+.Grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 425px) {
+  .Grid {
+    display: block;
+  }
+}
+
+.Header {
+  position: absolute;
+  top: 20px;
+}
+
+@media only screen and (max-width: 425px) {
+  .Header {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.H1 {
+  width: 291px;
+  height: 75px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .H1 {
+    width: 164px;
+    height: 42px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #ffffff;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .H1 {
+    font-size: 24px;
+    width: 9px;
+  }
+}
+
+.H2 {
+  position: absolute;
+  width: 470px;
+  height: 166px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .H2 {
+    position: absolute;
+    width: 371px;
+    height: 142px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .H2 {
+    width: 327px;
+    height: 142px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .H2 {
+    width: 257px;
+    height: 107px;
+    font-size: 14px;
+  }
+}
+
+.CardContent {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 90px;
+  width: 772px;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .CardContent {
+    width: 597px;
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .CardContent {
+    flex-direction: column;
+    justify-content: center;
+    width: max-content;
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .CardContent {
+    margin-left: 13px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .CardContent {
+    margin-left: 13px;
+  }
+}
+
+.Card {
+  width: 373px;
+  height: 255px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Card {
+    width: 288px;
+    height: 181px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .Card {
+    margin-bottom: 15px;
+    width: 325px;
+    height: 181px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .Card {
+    width: 305px;
+    height: 181px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .Card {
+    width: 251px;
+    height: 181px;
+  }
+}
+.H3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+@media only screen and (max-width: 768px) {
+  .H3 {
+    font-size: 14px;
+    line-height: 16px;
+    width: 261px;
+    height: 59px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .H3 {
+    width: 228px;
+    height: 106px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.CardFooter {
+  width: 337px;
+  height: 84px;
+  margin-top: 72px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .CardFooter {
+    margin-top: 50px;
+  }
+}
+
+.Footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 425px) {
+  .Footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.FooterContent {
+  display: flex;
+  flex-direction: column;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .FooterContent {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .FooterContent {
+    margin-top: 20px;
+  }
+}
+
+.FooterHeader {
+  width: 163px;
+  height: 56px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .FooterHeader {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .FooterHeader {
+    font-size: 24px;
+  }
+}
+
+.FooterPar {
+  width: 485px;
+  height: 56px;
+  left: 156px;
+  top: 1092px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .FooterPar {
+    width: 276px;
+    height: 84px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .FooterPar {
+    width: 251px;
+    height: 63px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.Image {
+  width: 333px;
+  height: 91px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+}
+
+@media only screen and (max-width: 768px) {
+  .Image {
+    width: 373px;
+    height: 102px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .Image {
+    width: 297px;
+    height: 81px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .Image {
+    width: 258px;
+    height: 70px;
+  }
+}
+
+.Logo {
+  width: 601px;
+  height: 496px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Logo {
+    width: 399px;
+    height: 329px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Logo {
+    width: 280px;
+    height: 231px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .Logo {
+    width: 243px;
+    height: 182px;
+  }
+}
+
+.Paragraf {
+  display: flex;
+}
+
+.CardHeader {
+  position: absolute;
+  width: 205px;
+  height: 28px;
+  margin-left: 90px;
+  margin-top: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+@media only screen and (max-width: 768px) {
+  .CardHeader {
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 80px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .CardHeader {
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 50px;
+  }
+}

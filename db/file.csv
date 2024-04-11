@@ -1,0 +1,77 @@
+id,title,price,dateOfreadiness,discount_price,label,slug,description,media,media_type,height,width,available,category_id
+130,Торт свадебный с бабочками,1999,2,,P,tort-svadebnyj-s-babochkami,цена за 1кг. (с учетом декора),tort-svadebnyj-s-babochkami.jpg,image,1215,778,t,3
+132,Торт Фортнайт,1999,2,,P,tort-fortnajt,цена за 1кг. (с учетом декора),tort-fortnite.jpg,image,1603,1440,t,2
+134,Торт Космос,1999,2,,P,tort-kosmos,цена за 1кг. (с учетом декора),cosmos.mp4,video,1920,1080,t,2
+133,Торт с мишкой,1999,2,,P,tort-s-mishkoj,цена за 1кг. (с учетом декора),tort-s-mishkoj.jpg,image,1140,824,t,2
+136,Торт Человек Паук с пряником,1999,2,,P,tort-chelovek-pauk-s-pryanikom,цена за 1кг. (с учетом декора),celovek-payk.png,image,647,544,t,2
+137,Торт Феррари (Ferrari),1999,2,,P,tort-ferrari-ferrari,цена за 1кг. (с учетом декора),tort-ferrari.jpg,image,1534,1440,t,2
+138,Торт с короной №2,1999,2,,P,tort-s-koronoj-2,цена за 1кг. (с учетом декора),tort-s-koronoj.jpg,image,1800,1440,t,2
+139,Торт Чиаки Нанами,1999,2,,S,tort-chiaki-nanami,цена за 1кг. (с учетом декора),tort-chiaki-nanami.jpg,image,1838,1440,t,2
+135,Торт Галактика,1999,2,,P,tort-galaktika,цена за 1кг. (с учетом декора),tort-galaktik.jpg,image,815,564,t,6
+140,Торт Галактика с розовым оттенком,1999,2,,P,tort-galaktika-s-rozovym-ottenkom,цена за 1кг. (с учетом декора),tort-galaktika-s-rozovym-ottenkom.jpg,image,827,564,t,6
+141,Торт мраморный с цветами,1999,3,,P,tort-mramornyj-s-cvetami,цена за 1кг. (с учетом декора),tort-mramornyj-s-cvetami.jpg,image,1265,766,t,3
+142,Детский торт Единорог с Шариками,1999,2,,P,detskij-tort-edinorog-s-sharikami,цена за 1кг. (с учетом декора),tort-edinorog-s-sharikami.jpg,image,1025,850,t,2
+143,Детский торт для новорожденного без мастики,1999,2,,P,detskij-tort-dlya-novorozhdennogo-bez-mastiki,цена за 1кг. (с учетом декора),detskij-tort-dlya-novorozhdennogo-bez-mastiki.jpg,image,1544,1142,t,2
+144,Торты Супергерои «КОМИКСЫ»,1999,2,,P,torty-supergeroi-komiksy,цена за 1кг. (с учетом декора),torty-supergeroi-komiksy.jpg,image,1531,1241,t,2
+146,Торт с бабочками без мастики,1999,,,P,tort-s-babochkami-bez-mastiki,цена за 1кг. (с учетом декора),tort-s-babochkami.jpg,image,1063,864,t,2
+148,Торт с гранатовой жеодой,1999,2,,P,tort-s-granatovoj-zheodoj,цена за 1кг. (с учетом декора),tort-s-granatovoj-zheodoj.jpg,image,1800,1440,t,2
+149,Ягодный торт 2 ярусный,1999,2,,P,yagodnyj-tort-2-yarusnyj,цена за 1кг. (с учетом декора),yagodnyj-tort-2-yrusa.jpg,image,1406,1152,t,3
+150,Детский торт без мастики с русалочкой,1999,2,,P,detskij-tort-bez-mastiki-s-rusalochkoj,цена за 1кг. (с учетом декора),detskij-tort-bez-mastiki-s-rusalochkoj.jpg,image,1613,1135,t,2
+151,Торт океан,1990,2,,P,tort-okean,цена за 1кг. (с учетом декора),tort-okean.jpg,image,1799,1440,t,2
+152,Детский торт Poopsie,1999,2,,P,detskij-tort-poopsie,цена за 1кг. (с учетом декора),detskij-tort-poopsie.jpg,image,1756,1440,t,2
+155,Детский торт Молния маквин,1999,2,,P,detskij-tort-molniya-makvin,цена за 1кг. (с учетом декора),detskij-tort-molniya-makvin.jpg,image,1800,1440,t,2
+156,Детский торт Наруто,1999,2,,S,detskij-tort-naruto,цена за 1кг. (с учетом декора),detskij-tort-naruto.jpg,image,1800,1440,t,2
+157,Детские торты на 1 годик,1999,2,,P,detskie-torty-na-1-godik,цена за 1кг. (с учетом декора),detskie-torty-na-1-godik.jpg,image,1612,1440,t,2
+153,Детский торт паровозик томас,1999,2,,P,detskij-tort-parovozik-tomas,цена за 1кг. (с учетом декора),s-parovozikom.png,image,1583,1000,t,2
+159,Торт с  разноцветной посыпкой,1800,2,,P,tort-s-raznocvetnoj-posypkoj,цена за 1кг. (с учетом декора),tort-s-raznocvetnoj-posypkoj.jpg,image,1440,1594,t,2
+145,Детский торт Холодное сердце,1999,2,,P,detskij-tort-holodnoe-serdce,цена за 1кг. (с учетом декора),detskij-tort-holodnoe-serdce.jpg,image,1260,1008,t,2
+129,Торт с кошками,1999,2,,P,tort-s-koshkami,цена за 1кг. (с учетом декора),tort-s-koshechkami.jpg,image,1455,1289,t,2
+158,Детский торт Эльза,2000,2,,P,detskij-tort-elza,цена за 1кг. (с учетом декора),frozen.mp4,video,1920,1080,t,2
+160,Холодное сердце снежинки,1800,2,,P,holodnoe-serdce-snezhinki,цена за 1кг. (с учетом декора),holodnoe-serdce-snezhinki.jpg,image,827,564,t,2
+161,Торт Мишка и звезды,1999,2,,P,tort-mishka-i-zvezdy,цена за 1кг. (с учетом декора),tort-mishka-i-zvezdy.jpg,image,888,564,t,2
+128,Торт Единорог 0.9,1000,2,,S,tort-edinorog-09,.,unicorn.jpg,image,1072,750,t,2
+147,Торт с бабочками без мастики(Торт с бабочками без мастики(нежно розовый),1999,,,P,tort-s-babochkami-bez-mastiki_1,цена за 1кг. (с учетом декора),tort-rozovyj-s-babochkami.jpg,image,1000,594,t,2
+162,Голубой с мишкой и облаками,1999,2,,P,goluboj-s-mishkoj-i-oblakami,цена за 1кг. (с учетом декора),goluboj-s-mishkoj-i-oblakami.jpg,image,904,563,t,2
+163,Торт Космос и Астронавт,1999,2,,P,tort-kosmos-i-astronavt,цена за 1кг. (с учетом декора),tort-kosmos-i-astronavt.jpg,image,809,564,t,2
+164,Детские торт Принцесса,1999,2,,P,letskie-tort-princessa,цена за 1кг. (с учетом декора),detskij-tort-princessa.jpg,image,2064,1291,t,2
+165,Детский торт с леденцами и короной,1999,2,,P,detskij-tort-s-ledencami-i-koronoj,цена за 1кг. (с учетом декора),tort-ledencami-i-koronoj.jpg,image,1800,1440,t,2
+166,Торт с мишкой Тедди для мальчика,1999,2,,P,tort-s-mishkoj-teddi-dlya-malchika,цена за 1кг. (с учетом декора),tort-s-mishkoj-teddi.jpg,image,1200,960,t,2
+167,Торт с мишкой Тедди с разноцветными шарами,1999,3,,P,tort-s-mishkoj-teddi-s-raznocvetnymi-sharami,цена за 1кг. (с учетом декора),tort-s-mishkoj-teddi-sharami.jpg,image,1310,1128,t,2
+127,Торт Черный Лес 0.9кг.,650,0,,P,tort-chernyj-les-09kg,"Классический торт из шоколадного бисквита, пропитанный сиропом, прослоен вишнёвой начинкой со взбитыми сливками. Торт украшен сливками, шоколадной посыпкой.",tort-chernyj-les-09kg.png,image,362,544,t,1
+168,Торт с мишкой Тедди с шарами,1999,2,,P,tort-s-mishkoj-teddi-s-sharami,цена за 1кг. (с учетом декора),tort-s-mishkoj-teddi-s-sharami.jpg,image,1352,1126,t,2
+169,Торт  Кукла Lola с леденцами,1999,2,,P,tort-kukla-lola-s-ledencami,цена за 1кг. (с учетом декора),tort-kukla-lola-s-ledencami.jpg,image,1067,867,t,2
+172,Торт на юбилей маме без мастики,1890,2,,P,tort-na-yubilej-mame-bez-mastiki,цена за 1кг. (с учетом декора),tort-s-podtekami-i-cvetami.jpg,image,1579,1158,t,3
+180,Торт Эстерхази,2000,2,,P,tort-esterhazi,"Состоит из пяти коржей, выпеченных из взбитой белковой массы с добавлением миндаля, сливочного масла и миндальной муки и соединённых между собой сливочным кремом .",tort-esterhazi.jpg,image,1400,932,t,1
+183,Торт на 18 лет для девушки,1999,2,,P,tort-na-18-let-dlya-devushki,цена за 1кг. (с учетом декора),tort-na-18-let-dlya-devushki.jpg,image,1221,1080,t,2
+184,Торт машина Бентли,1999,2,,P,tort-mashina-bentli,цена за 1кг. (с учетом декора),tort-mashina-bentli.jpg,image,1500,1088,t,2
+174,Торт шиммер и шайн,1999,2,,S,tort-shimmer-i-shajn,цена за 1кг. (с учетом декора),tort-shimmer-i-shajn.jpg,image,1579,1184,t,2
+177,Торт с косметикой,1999,2,,P,tort-s-kosmetikoj,цена за 1кг. (с учетом декора),tort-s-kosmetikoj.jpg,image,1237,1080,t,2
+178,Торт морской парус,1999,2,,P,tort-morskoj-parus,цена за 1кг. (с учетом декора),tort-morskoj-parus.jpg,image,1398,1152,t,2
+154,Торт Елена - принцесса Авалора,1999,2,1500,P,tort-elena-princessa-avalora,цена за 1кг. (с учетом декора),tort-elena-princessa-avalora.jpg,image,1613,1440,t,2
+176,Cвадебный торт с розами,2500,4,,P,cvadebnyj-tort-s-rozami,цена за 1кг. (с учетом декора),cvadebnyj-tort-s-rozami.jpg,image,1417,869,t,3
+179,Торт на крестины с ангелом,1999,2,,P,tort-na-krestiny-s-angelom,цена за 1кг. (с учетом декора),tort-na-krestiny-s-angelom.jpg,image,1362,1152,t,2
+181,Торт машина гелендваген,1999,2,,P,tort-mashina-gelendvagen,цена за 1кг. (с учетом декора),tort-mashina-gelendvagen.jpg,image,1400,1013,t,2
+182,Торт Шанель,1999,2,,S,tort-shanel,цена за 1кг. (с учетом декора),tort-shanel.jpg,image,1613,1210,t,2
+185,Чизкейк Tворожно -Малиновый,2000,2,,P,chizkejk-tvorozhno-malinovyj,"У торта потрясающий малиновый аромат. Вкус кисловато-сладкий. Творожная масса нежная и гладкая. Ягодки, встречающиеся в массе, освежают вкус.",chizkejk-tvorozhno-malinovyj-08-kg.png,image,657,438,t,1
+186,Торт Красный Бархат,2000,2,,P,tort-krasnyj-barhat,Торт Красный бархат Cake Nuage - это удивительное сочетание сочных и бархатистых коржей с нежным и гладким сливочным кремом.,tort-krasnyj-barhat.jpg,image,1920,1080,t,1
+187,Детский торт Фиксики,1999,2,,P,detskij-tort-fiksiki,цена за 1кг. (с учетом декора,detskij-tort-fiksiki.jpg,image,1580,1336,t,2
+188,Торт на годик девочке с короной,1999,2,,P,tort-na-godik-devochke-s-koronoj,цена за 1кг. (с учетом декора),tort-na-godik-devochke-s-koronoj.jpg,image,1252,1000,t,2
+171,Детский торт единорог с леденцами,1999,2,,P,detskij-tort-edinorog-s-ledencami,цена за 1кг. (с учетом декора),detskij-tort-edinorog-s-ledencami.jpg,image,632,525,t,2
+170,Детские торт единорог с шариками,1999,2,,P,tort-edinorog-s-sharikami,цена за 1кг. (с учетом декора),tort-edinorog-s-sharikami.jpg,image,1025,800,t,2
+173,Торт для девочки Эльза,1990,2,,P,tort-dlya-devochki-elza,цена за 1кг. (с учетом декора),tort-dlya-devochki-elza.jpg,image,632,555,t,2
+189,Торт с короной в золотом цвете,1999,2,,P,tort-s-koronoj-v-zolotom-cvete,цена за 1кг. (с учетом декора),tort-s-koronoj-black.jpg,image,1300,1122,t,2
+203,Торт с Единорог без мастики,1999,2,1500,P,tort-s-edinorog-bez-mastiki,цена за 1кг. (с учетом декора),tort-s-edinorog-bez-mastiki.jpg,image,1303,1042,t,2
+131,"Торт Тирамису 0,8 кг.",650,,,P,tort-tiramisu-08-kg,"Воздушный бисквит , очень гармонично сочетается с горьковатым какао и сливок со вкусом тирамису .",tiramisu.jpg,image,1024,768,t,1
+193,Детский торты на день рождения 1 годик,1999,2,,P,detskij-torty-na-den-rozhdeniya-1-godik,цена за 1кг. (с учетом декора),detskij-torty-na-den-rozhdeniya-1-godik.jpg,image,1614,1440,t,2
+194,Торт для мужчины с потеками,1999,2,,S,tort-dlya-muzhchiny-s-potekami,цена за 1кг. (с учетом декора),tort-dlya-muzhchiny-s-potekami.jpg,image,1640,1440,t,7
+195,Торт для мужчины с деньгами,1999,2,,P,tort-dlya-muzhchiny-s-dengami,цена за 1кг. (с учетом декора),tort-dlya-muzhchiny-s-dengami.jpg,image,1600,1377,t,7
+196,Ягодный торт Фруктовое счастье,2200,2,,P,yagodnyj-tort-fruktovoe-schaste,цена за 1кг. (с учетом декора),yagodnyj-tort-fruktovoe-schaste.jpg,image,1440,1440,t,8
+192,Елка из имбирных пряников,3000,4,,P,elka-iz-imbirnyh-pryanikov,/,elka-iz-imbirnyh-pryanikov.jpg,image,1200,583,t,1
+191,"Пряничный домик Зима, 800 г",6000,4,,P,pryanichnyj-domik-zima-800-g,/,pryanichnyj-domik-zima-800-g.jpg,image,1600,1220,t,1
+175,Новогодний торт Новогодняя Елка,1999,2,,S,novogodnij-tort-novogodnyaya-elka,цена за 1кг. (с учетом декора),novogodnij-tort-novogodnyaya-elka.jpg,image,1496,950,t,4
+190,Торт рафаэлло с малиной,1000,2,,P,tort-rafaello-s-malinoj,Вес - 800 гр.,tort-rafaello-s-malinoj.png,image,1350,1080,t,1
+198,Новогодний торт елкой с подтеками,1699,2,,P,novogodnij-tort-elkoj-s-podtekami,цена за 1кг. (с учетом декора),novogodnij-tort-elkoj-s-podtekami.jpg,image,705,564,t,4
+199,Капкейки в виде елки,99,2,,P,kapkejki-v-vide-elki,Цена 99 руб. за 1 шт.,kapkejki-v-vide-elki.jpg,image,846,564,t,4
+201,Торт Единорог 2 яруса,1999,2,,P,tort-edinorog-2-yarusa,цена за 1кг. (с учетом декора),tort-edinorog-2-yarusa.jpg,image,901,564,t,2
+200,Новогодний торт с елкой(фиолетового цвета),1999,2,,P,novogodnij-tort-s-elkojfioletovogo-cveta,цена за 1кг. (с учетом декора),novogodnij-tort-s-elkojfioletovogo-cveta.jpg,image,1040,1040,t,4
+202,Торт Единорог с косичкой,1999,2,,P,tort-edinorog-s-kosichkoj,цена за 1кг. (с учетом декора),tort-edinorog-s-kosichkoj.jpg,image,1265,1173,t,2

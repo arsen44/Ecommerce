@@ -1,0 +1,35 @@
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+}
+
+.textCentered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.TextH3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 96.82%;
+  /* or 23px */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .TextH3 {
+    font-size: 12px;
+  }
+}

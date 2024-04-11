@@ -1,0 +1,117 @@
+.IconBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.IconText {
+  margin-left: 20px;
+  word-wrap: break-word;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 425px) {
+  .IconText {
+    margin-left: 2px;
+    word-wrap: break-word;
+  }
+}
+
+.InputButton {
+  width: 180px;
+  height: 50px;
+  background: linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 32px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 0.2s ease-in;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.InputButton:hover {
+  transform: translateY(-3px);
+}
+
+.description {
+  color: #ffffff;
+}
+
+.topping {
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .topping {
+    background: #989cb3;
+    border-radius: 30px;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .toppinglabel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.select {
+  width: 100%;
+
+  [class$="-placeholder"] {
+    color: #ffffff;
+  }
+  [class$="-control"] {
+    background-color: #c7c9d5;
+    border-radius: 20px;
+    height: 80px;
+    border: 1px solid #f4f1f1;
+    line-height: 96.82%;
+  }
+
+  [class$="-ValueContainer"] {
+    padding: 0;
+  }
+
+  [class$="-singleValue"] {
+    margin-left: 0;
+  }
+
+  [class$="-menu"] {
+    margin-top: 0;
+    border: 1px solid #f4f1f1;
+    background-color: #c7c9d5;
+    border-radius: 20px;
+  }
+
+  [class$="-MenuList"] {
+    margin-top: 0;
+    background-color: #c7c9d5;
+    border-radius: 20px;
+  }
+
+  [class$="-indicatorContainer"] {
+    color: #66a6ff;
+  }
+
+  .IconImage {
+    height: 79px;
+    width: 120px;
+    border-radius: 20px 0px 0px 20px;
+  }
+}
+
+.slider {
+  [class$="slick-next"] {
+    right: 5%;
+  }
+  [class$="slick-prev"] {
+    left: 5%;
+  }
+}

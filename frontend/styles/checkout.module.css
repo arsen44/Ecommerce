@@ -1,0 +1,134 @@
+.buttonsyled {
+  cursor: pointer;
+  width: 145px;
+  height: 40px;
+  margin-top: 5px;
+  background: linear-gradient(90deg, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 32px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 0.2s ease-in;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.buttonsyled:hover {
+  transform: translateY(-3px);
+}
+
+@media only screen and (max-width: 425px) {
+  .buttonsyled {
+    margin-bottom: 20px;
+  }
+}
+
+.getAdress {
+  color: #9befef;
+  padding-left: 1%;
+  text-decoration: revert;
+}
+
+.OrderWindow {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 425px) {
+  .OrderWindow {
+    flex-direction: column;
+  }
+}
+
+
+.customradiocontrol {
+  z-index: -1;
+  opacity: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 3px;
+}
+
+.customradiocontrol + .customcontrollabel {
+  background: rgba(255, 255, 255, 0.25);
+  border: 0.5px solid rgba(70, 70, 70, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 5px 6px rgba(223, 223, 223, 0.1);
+  backdrop-filter: blur(35px);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+  font-size: 1rem;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.customradiocontrol + .customcontrollabel > img {
+  width: 80px;
+  margin: 0.5rem auto;
+  display: block;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-filter: grayscale(100%) opacity(0.5);
+  filter: grayscale(100%) opacity(0.5);
+}
+
+.customradiocontrol:hover ~ .customcontrollabel {
+  cursor: pointer;
+  border-color: #6c6c6c;
+  color: #6c6c6c;
+}
+
+.customradiocontrol:hover ~ .customcontrollabel > svg {
+  -webkit-filter: grayscale(100%) opacity(0.75);
+  filter: grayscale(100%) opacity(0.75);
+}
+
+.customradiocontrol:checked + .customcontrollabel {
+  border: 0.5px rgb(44, 17, 17) gba(70, 70, 70, 0.5);
+  color: #353535;
+  background: linear-gradient(90deg, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.customradiocontrol:checked + .customcontrollabel > svg {
+  -webkit-filter: grayscale(0) opacity(0.95);
+  filter: grayscale(0) opacity(0.95);
+}
+
+.customradiocontrol:disabled ~ .customcontrollabel {
+  color: #a58b8b;
+}
+
+.customradiocontrol:disabled ~ .customcontrollabel::before {
+  background-color: #e9ecef;
+}
+.customcontrollabel {
+  position: relative;
+  margin-bottom: 0;
+}
+.customcontrollabel::before {
+  content: "";
+  display: none;
+}
+
+
+.strong {
+  color: rgb(244, 244, 244);
+}

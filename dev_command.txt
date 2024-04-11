@@ -1,0 +1,81 @@
+docker-compose -f docker-compose-dev.yml up 
+
+type dump_db.sql | docker exec -i next_db_1 psql -U postgres
+
+docker exec -i next_db_1  /usr/bin/pg_dumpall -U postgres > dump_db.sql
+
+docker exec next_db_1 pg_restore -U postgres -d postgres dump_db.sql
+
+
+
+
+docker-compose exec db psql --username=postgres --dbname=postgres
+
+docker exec -t -i 47a0240e81b9 /bin/sh
+
+
+venv\Scripts\activate 
+
+python manage.py createsuperuser
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+py manage.py runserver
+
+
+
+
+
+
+
+пупть к файлу Program Files\PostgreSQL\10\bin\
+
+
+ssh -i "cake-nuage.pem" ubuntu@ec2-3-140-253-10.us-east-2.compute.amazonaws.com
+
+
+/var/snap/docker/common/var-lib-docker/volumes/app_postgres_data/
+
+
+1.Воход в базу данных 
+
+    psql.exe -U postgres 
+
+2.Создать template1
+
+    CREATE DATABASE template1 TEMPLATE template0;
+
+3.Создать тестову базу 
+
+    psql -c "CREATE DATABASE test" "user=postgres dbname=postgres"
+
+4. Удалить раобучую базу данных 
+  
+  psql.exe -U postgres -d test
+  DROP DATABASE postgres;
+
+4.Создать Новную боевую базу 
+
+    psql -c "CREATE DATABASE postgres" "user=postgres dbname=test"
+
+||||||||||||||| Сборка Docker !!!!!!!!!!!!!!!!!
+
+docker-compose -f docker-compose-dev.yml build
+
+docker exec -i postgres /usr/bin/pg_dumpall -U postgres > dump_db.sql
+ 
+
+
+Копирвать Category
+
+psql -U postgres -c  "\copy public.core_category (id, name, slug, mediacontent, seo_description) FROM 'C:/Users/4F2E~1/Desktop/app/next/category.csv' DELIMITER ',' CSV HEADER ENCODING 'UTF8' QUOTE '\"' ESCAPE '''';""
+
+Копирвать Item 
+
+psql -U postgres -c  "\copy public.core_item (id, title, price, \"dateOfreadiness\", discount_price, label, slug, description, media, media_type, height, width, available, category_id) FROM 'C:/Users/4F2E~1/Desktop/app/next/file.csv' DELIMITER ',' CSV HEADER ENCODING 'UTF8' QUOTE '\"' ESCAPE '''';"
+
+Копирвать Carousel
+
+psql -U postgres -c  "\copy public.core_carousel (id, name, slug, mediacarousel) FROM 'C:/Users/4F2E~1/Desktop/app/next/carousel.csv' DELIMITER ',' CSV HEADER ENCODING 'UTF8' QUOTE '\"' ESCAPE '''';"

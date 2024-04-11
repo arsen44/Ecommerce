@@ -1,0 +1,159 @@
+!!!!!!!!!!!!!!!!!!!!!!!!    DJANGO____Backed  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+python manage.py search_index --create -f
+
+python  manage.py search_index --rebuild -f
+
+python manage.py collectstatic
+
+sudo docker exec -t -i 359b91630e30 /bin/sh    вход в контерние базы
+
+python manage.py dumpdata > db.json
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   DOCKER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+sudo chmod ugo+rwx docker/backend/postgres-entrypoint.sh и папку тоже самое сделать
+
+sudo chmod ugo+rwx docker/backend/wsgi-entrypoint.sh и папку тоже самое сделать
+
+docker container ls
+
+sudo docker system prune --all --force
+
+sudo docker-compose down --rmi all --volumes
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  Backed Postgres  подключение  !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+sudo docker-compose exec db psql --username=cakenuage --dbname=cakenuage 
+
+\l 
+
+\c cakenuage
+
+\dt
+
+\q
+
+
+!!!!!!!!!!!!!!!!!!!!!! Общие команды !!!!!!!!!!!!!!!!
+venv\Scripts\activate 
+
+py manage.py runserver
+
+python manage.py createsuperuser
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+pip freeze > requirements.txt
+
+pip install -r requirements.txt
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!! GITHUB !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	
+git init
+
+git add .
+
+git remote add origin https://github.com/arsen44/django-next-ecommerce.git
+
+git commit -m "ssr_1"
+
+git push origin main
+
+
+!!!!!!!!!!!!!!Cоздать резервную копию базы данных Postgres из контейнера Docker!!!!!!!!!!!!!!!!!
+
+
+sudo docker exec -t app_db_1 pg_dumpall -c -U cakenuage > dump_db.sql
+
+
+!!!!!!!!!!!!Восстановить информацию базы данных из файла дампа!!!!!!!!!!!!!!!!
+
+sudo -i
+
+
+sudo cat dump_db.sql | docker exec -i app_db_1 psql -U cakenuage
+
+
+!!!!!!!!!!!!!!!!!!aws копировать данные !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+aws s3 cp s3://cakenuage C:/Users/Варужан/Desktop/aws --recursive
+
+
+
+
+?????????????????????????????  DEV ?????????????????????????????????????????????????
+
+
+
+docker-compose -f docker-compose-dev.yml build
+
+sudo docker system prune --all --force
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!! Postgres !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+psql -d cakenuage -U cakenuage
+
+psql -U cakenuage -d cakenuage -f C:/Users/Варужан/Desktop/app/next/dump_db.sql
+
+
+CREATE DATABASE template1 TEMPLATE template0;
+
+createdb -T template01 cakenuage
+
+CREATE DATABASE cakenuage TEMPLATE template1;
+
+
+DROP DATABASE cakenuage
+
+
+
+
+Настройки боевые
+
+
+docker-compose -f docker-compose-dev.yml up --build
+
+
+
+ ALTER TABLE таблица  ALTER COLUMN ident SET DEFAULT 0;
+
+ \! chcp 1251
+
+
+Win---type dump_db.sql postgres psql -U postgres
+
+
+
+
+
+DROP TABLE IF EXISTS core_category CASCADE;
+
+alter table core_category add column bio character varying not null;
+
+
+ALTER TABLE core_category 
+ ADD seo_description text;
+
+
+
+sudo cat dump_db.sql | docker exec -i app_db_1 psql -U cakenuage
+
+
+
+/////////////  Выгрузка бызы в csv файл    ////////////
+
+docker exec -i app_db_1 psql -U cakenuage cakenuage -c "COPY core_item TO STDOUT WITH CSV HEADER" > file.csv
+
+docker exec -i app_db_1 psql -U cakenuage cakenuage -c "COPY core_category TO STDOUT WITH CSV HEADER" > category.csv
+
+docker exec -i app_db_1 psql -U cakenuage cakenuage -c "COPY core_carousel TO STDOUT WITH CSV HEADER" > carousel.csv
+
+docker exec -i app_db_1 psql -U cakenuage cakenuage -c "COPY core_itemvariation TO STDOUT WITH CSV HEADER" > Variations.csv
